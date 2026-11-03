@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scuderia Ferrari</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/0.9.3/hamburgers.min.css">
+    <style>
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding-top: 70px;
+        }
+
+        main div {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            border-radius: 30px;
+            padding: 20px;
+            transition: 0.5s;
+        }
+
+        main div:hover {
+            background-color: #790505;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        main div img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        main div p {
+            max-width: 600px;
+            font-size: 18px;
+            color: white;
+            font-family: "bebas neue", sans-serif;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../imagens/4924.png" alt="">
+            <p>Scuderia Ferrari</p>
+        </div>
+
+        <button class="hamburger hamburger--slider" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
+        <div class="nav">
+            <a href="index.html" class="hvr-underline-from-center">Home</a>
+            <a href="historia.html"  class="active-link active">História</a>
+            <a href="nossospilotos.html" class="hvr-underline-from-center">Nossos Pilotos</a>
+            <a href="quiz.html" class="hvr-underline-from-center">Quiz</a>
+            <div><a href="faleconosco.html" class="hvr-underline-from-center">Fale Conosco</a></div>
+        </div>
+    </header>
+
+    <main>
+        <h1>O Início na Fórmula 1</h1>
+        <div><img src="../imagens/f1-1953-02.webp" alt="">
+            <p>A Ferrari é a equipe mais tradicional da Formula 1. Estreou na categoria em 1950 e, desde então, é a
+                única equipe presente em todas as temporadas da F1. Fundada por Enzo Ferrari, a escuderia rapidamente se
+                destacou pela competitividade e paixão pelas corridas.</p>
+        </div>
+        <h1>Primeiros Títulos</h1>
+        <div><img src="../imagens/1980_US_West_Grand_Prix_Gilles_Villeneuve_Ferrari_2048x2048.webp" alt="">
+            <p>O primeiro grande sucesso veio em 1952 e 1953 com Alberto Ascari, que conquistou dois títulos mundiais de
+                pilotos. Nas décadas seguintes, a Ferrari continuou forte, vencendo campeonatos com pilotos lendários e
+                consolidando sua imagem como potência da categoria.</p>
+        </div>
+        <h1>Era de Ouro com Schumacher</h1>
+        <div><img src="../imagens/images.jfif" alt="">
+            <p>O período mais dominante da equipe aconteceu entre 2000 e 2004, com Michael Schumacher. Ao lado de uma
+                equipe extremamente organizada, ele conquistou cinco títulos consecutivos pela Ferrari, marcando uma das
+                fases mais vitoriosas da história da F1.</p>
+        </div>
+        <h1>Desafios e Reconstrução</h1>
+        <div><img src="../imagens/6xdsz5ob2ex31.jpg" alt="">
+            <p>Após o auge dos anos 2000, a Ferrari enfrentou altos e baixos. Mesmo com vitórias importantes e disputas
+                intensas por campeonatos, a equipe passou por reformulações para tentar voltar ao topo.</p>
+        </div>
+        <h1>A Ferrari Hoje</h1>
+        <div><img src="../imagens/images (1).jfif" alt="">
+            <p>Atualmente, a Ferrari segue como uma das equipes mais competitivas e populares da Fórmula 1. Mesmo em
+                meio a desafios, mantém a tradição, a enorme base de fãs e o objetivo constante de conquistar novos
+                títulos mundiais.</p>
+        </div>
+    </main>
+    <main>
+
+    </main>
+<footer class="site-footer">
+    <div class="footer-logo">
+        <img src="../imagens/4924.png" alt="Logo Ferrari">
+        <span>Scuderia Ferrari</span>
+    </div>
+    <p>© 2026 Scuderia Ferrari. Todos os direitos reservados.</p>
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="historia.html">História</a>
+        <a href="nossospilotos.html">Nossos Pilotos</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="faleconosco.html">Fale Conosco</a>
+    </div>
+</footer>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const nav = document.querySelector(".nav");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("is-active");
+            nav.classList.toggle("active");
+        });
+    </script>

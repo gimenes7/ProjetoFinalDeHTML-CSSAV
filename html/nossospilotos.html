@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scuderia Ferrari</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/0.9.3/hamburgers.min.css">
+    <style>
+        .pilotostxt {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        h2 {
+            color: white;
+            font-family: bebas neue, sans-serif;
+            padding: 30px;
+        }
+        .pilotostxt>p{
+            color: white;
+             font-family: bebas neue, sans-serif;
+             font-size: 20px;
+             margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../imagens/4924.png" alt="">
+            <p>Scuderia Ferrari</p>
+        </div>
+
+        <button class="hamburger hamburger--slider" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
+        <div class="nav">
+            <a href="index.html" class="hvr-underline-from-center">Home</a>
+            <a href="historia.html" class="hvr-underline-from-center">História</a>
+            <a href="nossospilotos.html" class="active-link active">Nossos Pilotos</a>
+            <a href="quiz.html" class="hvr-underline-from-center">Quiz</a>
+            <div><a href="faleconosco.html" class="hvr-underline-from-center">Fale Conosco</a></div>
+        </div>
+    </header>
+    <main>
+        <div class="pilotos-ar">
+            <div class="pilotos" id="inossospilotos">
+                <h2>Pilotos atuais</h2>
+                <div><a href="https://pt.wikipedia.org/wiki/Lewis_Hamilton" target="_blank"><img
+                            src="../imagens/0ff8ae7649b447bd8e023f4e31dc4042-Photoroom.png" alt=""></a>
+                    <p>Lewis Hamilton</p>
+                </div>
+                <div><a href="" target="_blank"><img src="../imagens/fe2de9975d864e38acfd9933164954a6-Photoroom.png"
+                            alt="">
+                        <p>Charles Leclerc</p>
+                    </a>
+                </div>
+            </div>
+            <div class="vertical-hr"></div>
+            <hr class="hrm">
+            <div>
+                <div class="pilotos" id="inossospilotos">
+                    <h2>Pilotos reservas</h2>
+                    <div><a href="https://pt.wikipedia.org/wiki/Lewis_Hamilton" target="_blank"><img
+                                src="../imagens/eyJidWNrZXQiOiJmcm9udGllci1jbXMiLCJrZXkiOiJmMW1hbmFnZXIvMjAyMy9kcml2ZXJzL2hlYWRzaG90cy9mMS9naW8ucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo1MDB9fX0=.png"
+                                alt=""></a>
+                        <p>Antonio Giovinazzi</p>
+                    </div>
+                    <div><a href="" target="_blank"><img src="../imagens/Oliver-Bearman-F1-2024-NEW-Photoroom.png"
+                                alt="">
+                            <p>Oliver Bearman</p>
+                        </a></div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="pilotostxt">
+            <h2>Trajetória até se tornar piloto da maior equipe da Fórmula 1</h2>
+            <p>A trajetória até se tornar piloto da maior equipe da Fórmula 1 é construída com anos de esforço e dedicação. Desde o kart, o piloto enfrenta desafios, aprende a lidar com pressão e precisa se destacar em cada categoria. Apenas os mais preparados conseguem chegar ao topo do automobilismo.</p>
+            <p>Representar uma equipe histórica como a Scuderia Ferrari é o sonho de muitos pilotos. Essa conquista é resultado de talento, disciplina e desempenho consistente ao longo da carreira. Chegar a esse nível significa fazer parte da elite do esporte e carregar uma tradição de vitórias e paixão pelas pistas.</p>
+        </div>
+    </main>
+    <footer class="site-footer">
+    <div class="footer-logo">
+        <img src="../imagens/4924.png" alt="Logo Ferrari">
+        <span>Scuderia Ferrari</span>
+    </div>
+    <p>© 2026 Scuderia Ferrari. Todos os direitos reservados.</p>
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="historia.html">História</a>
+        <a href="nossospilotos.html">Nossos Pilotos</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="faleconosco.html">Fale Conosco</a>
+    </div>
+</footer>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const nav = document.querySelector(".nav");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("is-active");
+            nav.classList.toggle("active");
+        });
+    </script>

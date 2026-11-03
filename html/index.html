@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scuderia Ferrari</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/0.9.3/hamburgers.min.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="icon" type="image/png" href="imagens/Scuderia_Ferrari_logo.webp">
+  <style>
+    .titulo-principal {
+      color: white;
+      font-family: bebas neue, sans-serif;
+    }
+
+    .txtinicial {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    .txtinicial>p {
+      color: white;
+      font-size: 20px;
+    }
+
+    .conquistas {
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .conquistas>div>p{
+      font-size: 20px;
+    }
+    .conquistas>img{
+      width: 450px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="../imagens/4924.png" alt="">
+      <p>Scuderia Ferrari</p>
+    </div>
+
+    <button class="hamburger hamburger--slider" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+
+    <div class="nav">
+      <a href="index.html" class="active-link active">Home</a>
+      <a href="historia.html" class="hvr-underline-from-center">História</a>
+      <a href="#inossospilotos" class="hvr-underline-from-center">Nossos Pilotos</a>
+      <a href="quiz.html" class="hvr-underline-from-center">Quiz</a>
+      <a href="faleconosco.html" class="hvr-underline-from-center">Fale Conosco</a>
+    </div>
+  </header>
+  <main>
+    <div class="txtinicial">
+      <h1 class="titulo-principal">
+        Bem-vindo ao Universo Ferrari
+      </h1>
+      <p>A Scuderia Ferrari é a equipe mais tradicional da Fórmula 1. Com seu icônico carro vermelho e o símbolo do
+        cavallino rampante, representa velocidade, inovação e paixão pelo automobilismo. Ao longo dos anos, conquistou
+        títulos históricos e revelou grandes pilotos, tornando-se um verdadeiro ícone do esporte.
+      </p>
+    </div>
+    <div class="divcar">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../imagens/ferrari-sf-26-livery (1).webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../imagens/ferrari-sf-26-livery (2).webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../imagens/ferrari-sf-26-livery (3).webp" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <p>O carro da Ferrari para a temporada de 2026, o SF-26, foi desenvolvido seguindo o novo regulamento da Fórmula
+        1, trazendo mudanças aerodinâmicas e atualizações no motor híbrido V6 turbo. Mantendo o tradicional vermelho da
+        equipe, o modelo foi projetado para ser mais eficiente e competitivo.</p>
+    </div>
+
+    <section class="conquistas">
+      <img src="../imagens/0a7ytudymgvuuvbw4h0d8wmpp.jpg" alt="">
+      <h1>Nossos Títulos</h1>
+      <div>
+        <h3>16</h3>
+        <p>Títulos de Construtores</p>
+      </div>
+      <div>
+        <h3>15</h3>
+        <p>Títulos de Pilotos</p>
+      </div>
+      <div>
+        <h3>240+</h3>
+        <p>Vitórias na Fórmula 1</p>
+      </div>
+    </section>
+  </main>
+<footer class="site-footer">
+    <div class="footer-logo">
+        <img src="../imagens/4924.png" alt="Logo Ferrari">
+        <span>Scuderia Ferrari</span>
+    </div>
+    <p>© 2026 Scuderia Ferrari. Todos os direitos reservados.</p>
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="historia.html">História</a>
+        <a href="nossospilotos.html">Nossos Pilotos</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="faleconosco.html">Fale Conosco</a>
+    </div>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const nav = document.querySelector(".nav");
+
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("is-active");
+      nav.classList.toggle("active");
+    });
+  </script>
+</body>
+
+</html>

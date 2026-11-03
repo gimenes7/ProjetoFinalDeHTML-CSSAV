@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scuderia Ferrari</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/0.9.3/hamburgers.min.css">
+<style>
+  main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px
+    
+  }
+  main > div {
+    padding-top: 70px;
+  }
+  main > div >  img{
+    width: 450px;
+    border: solid 4px #004225;
+    border-radius: 20px;
+  }
+</style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="../imagens/4924.png" alt="">
+      <p>Scuderia Ferrari</p>
+    </div>
+
+    <button class="hamburger hamburger--slider" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+
+    <div class="nav">
+      <a href="index.html" class="hvr-underline-from-center">Home</a>
+      <a href="historia.html" class="hvr-underline-from-center">História</a>
+      <a href="nossospilotos.html" class="hvr-underline-from-center">Nossos Pilotos</a>
+      <a href="quiz.html" class="hvr-underline-from-center">Quiz</a>
+      <div><a href="faleconosco.html" class="active-link active">Fale Conosco</a></div>
+    </div>
+  </header>
+  <!--Consertar alinhamento-->
+  <main>
+    <div class="faleconosco">
+      <span>
+        <h3>Participe da proxima corrida da Ferrari</h3>
+        <p>Preencha as informações e concorra a um ingresso para proxima corrida da Ferrari</p>
+      </span>
+      <div class="inputs">
+        <div> <input type="text" placeholder="Nome"> <input type="text" placeholder="Sobrenome"></div>
+        <div><select name="Estado" id="iestado">
+            <option value="">Acre</option>
+            <option value="">Alagoas</option>
+            <option value="">Amapá</option>
+            <option value="">Amazonas</option>
+            <option value="">Bahia</option>
+            <option value="">Ceará</option>
+            <option value="">Distrito Federal</option>
+            <option value="">Espírito Santo</option>
+            <option value="">Goiás</option>
+            <option value="">Maranhão</option>
+            <option value="">Mato Grosso</option>
+            <option value="">Mato Grosso do Sul</option>
+            <option value="">Minas Gerais</option>
+            <option value="">Pará</option>
+            <option value="">Paraíba</option>
+            <option value="">Paraná</option>
+            <option value="">Pernambuco</option>
+            <option value="">Piauí</option>
+            <option value="">Rio de Janeiro</option>
+            <option value="">Rio Grande do Norte</option>
+            <option value="">Rio Grande do Sul</option>
+            <option value="">Rondônia</option>
+            <option value="">Roraima</option>
+            <option value="">Santa Catarina</option>
+            <option value="">São Paulo</option>
+            <option value="">Sergipe</option>
+            <option value="">Tocantins</option>
+          </select> <input type="text" placeholder="CEP"> <input type="text" placeholder="Email"></div>
+        <div><input type="text" id="iassunto" placeholder="Assunto"></div>
+        <div><input type="text" id="itexto" placeholder="Mensagem"></div>
+      </div>
+    </div>
+    <div>
+      <img src="../imagens/98751860_Formula-One-F1Emilia-Romagna-Grand-PrixAutodromo-Enzo-e-Dino-Ferrari-Imola-ItalyAp.jpg" alt="">
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-logo">
+        <img src="../imagens/4924.png" alt="Logo Ferrari">
+        <span>Scuderia Ferrari</span>
+    </div>
+    <p>© 2026 Scuderia Ferrari. Todos os direitos reservados.</p>
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="historia.html">História</a>
+        <a href="nossospilotos.html">Nossos Pilotos</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="faleconosco.html">Fale Conosco</a>
+    </div>
+</footer>
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const nav = document.querySelector(".nav");
+
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("is-active");
+      nav.classList.toggle("active");
+    });
+  </script>
